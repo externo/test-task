@@ -4,7 +4,7 @@ angular
   .module('app')
   .controller('NotificationController', NotificationController);
 
-function NotificationController($timeout, $interval) {
+function NotificationController($timeout, $window, $scope) {
 
   var Notification = this;
 
@@ -22,75 +22,84 @@ function NotificationController($timeout, $interval) {
     }, 1000);
   };
 
+  Notification.countRows = function () {
+    return Math.floor($(document).height() / 40)-3;
+  };
+
+  angular.element($window).bind('resize', function(){
+    Notification.count = Math.floor($(document).height() / 40)-3;
+    $scope.$apply();
+  });
+
   Notification.notifications = [
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Ivana Stankova",
       "action": "likes your photo",
-      "time": "2",
+      "time": "1",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Dave Peters",
       "action": "commented on your post",
-      "time": "5",
+      "time": "2",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Ivana Stankova",
       "action": "likes your photo",
-      "time": "2",
+      "time": "3",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Dave Peters",
       "action": "commented on your post",
-      "time": "5",
+      "time": "4",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Ivana Stankova",
       "action": "likes your photo",
-      "time": "2",
+      "time": "5",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Dave Peters",
       "action": "commented on your post",
-      "time": "5",
+      "time": "6",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Ivana Stankova",
       "action": "likes your photo",
-      "time": "2",
+      "time": "7",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Dave Peters",
       "action": "commented on your post",
-      "time": "5",
+      "time": "8",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Ivana Stankova",
       "action": "likes your photo",
-      "time": "2",
+      "time": "9",
       "content": "assets/images/content/no-content.jpg"
     },
     {
       "image": "assets/images/friends/no-image.png",
       "name": "Dave Peters",
       "action": "commented on your post",
-      "time": "5",
+      "time": "10",
       "content": "assets/images/content/no-content.jpg"
     },
   ];
