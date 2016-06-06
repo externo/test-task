@@ -102,6 +102,76 @@ function NotificationController($timeout, $window, $scope) {
       "time": "10",
       "content": "assets/images/content/no-content.jpg"
     },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Ivana Stankova",
+      "action": "likes your photo",
+      "time": "11",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Dave Peters",
+      "action": "commented on your post",
+      "time": "12",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Ivana Stankova",
+      "action": "likes your photo",
+      "time": "13",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Dave Peters",
+      "action": "commented on your post",
+      "time": "14",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Ivana Stankova",
+      "action": "likes your photo",
+      "time": "15",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Dave Peters",
+      "action": "commented on your post",
+      "time": "16",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Ivana Stankova",
+      "action": "likes your photo",
+      "time": "17",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Dave Peters",
+      "action": "commented on your post",
+      "time": "18",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Ivana Stankova",
+      "action": "likes your photo",
+      "time": "19",
+      "content": "assets/images/content/no-content.jpg"
+    },
+    {
+      "image": "assets/images/friends/no-image.png",
+      "name": "Dave Peters",
+      "action": "commented on your post",
+      "time": "20",
+      "content": "assets/images/content/no-content.jpg"
+    },
   ];
 
 }
