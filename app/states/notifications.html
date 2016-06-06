@@ -1,0 +1,13 @@
+<table>
+  <tbody>
+    <tr ng-repeat="notification in Notification.notifications | limitTo:Notification.count">
+      <td><img ng-src="{{notification.image}}" alt="avatar"/></td>
+      <td>{{notification.name}}</td>
+      <td><a href=""><i class="fa fa-heart"></i>{{notification.action}}</a></td>
+      <td><i class="fa fa-hourglass"></i>{{notification.time}}</td>
+      <td><img ng-src="{{notification.content}}" alt="content"/></td>
+    </tr>
+  </tbody>
+</table>
+<button ng-click="Notification.loadMore()" ng-show="Notification.showBtn">Load more</button>
+<img id="loading" src="assets/images/loader.gif" ng-show="Notification.showLoad"/>

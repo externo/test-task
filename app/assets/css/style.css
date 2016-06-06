@@ -1,0 +1,163 @@
+/***************** FONTS ********************/
+@import url("../../../node_modules/font-awesome/css/font-awesome.css");
+
+html {
+  font-size: 62.5%;
+  font-family: FontAwesome, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  min-height: 100vh;
+}
+
+main {
+  float: right;
+}
+
+img {
+  height: 50%;
+}
+
+table {
+  border-collapse: collapse
+}
+
+tr {
+  border-bottom: thin solid
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+header {
+  position: relative;
+}
+
+button {
+  position: relative;
+  background: #08b36f;
+  width: 190px;
+  height: 40px;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 80px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #0cd585;
+}
+
+/***************** NAVIGATION ********************/
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  background: #0cd585;
+}
+
+nav ul,
+nav li {
+  flex: 1;
+}
+
+nav li:last-child {
+  border-bottom: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-size: 1.8rem;
+}
+
+nav a:hover {
+  background: #adacac;
+  color: #fff;
+}
+
+nav li {
+  position: relative;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  list-style-type: none
+}
+
+nav input,
+nav label {
+  display: none;
+  width: 36px;
+  height: 36px;
+  background: #555;
+  color: #fff;
+  text-align: center;
+  line-height: 36px;
+  font-size: 1.6rem;
+  border-radius: 4px;
+}
+
+nav label {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transition: .4s;
+}
+
+nav label:hover {
+  cursor: pointer;
+}
+
+nav label:before {
+  font-size: 24px;
+  content: "\f0c9";
+  text-align: center;
+}
+
+/*************** MEDIA QUERIES *******************/
+@media only screen and (max-width: 800px) {
+  nav {
+    height: 40px;
+  }
+
+  nav ul {
+    transform: translateY(0);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .7);
+    transition: all .5s;
+    padding: 0;
+    position: relative;
+    top: -162px;
+  }
+
+  nav li {
+    flex: none;
+    width: 100%;
+    border-bottom: solid 1px #777;
+  }
+
+  nav input[type="checkbox"]:checked + ul {
+    transform: translateY(+162px);
+    width: 100%;
+    background: #0cd585;
+    transition: all .5s;
+  }
+
+  nav label {
+    display: block;
+  }
+
+  nav input[type="checkbox"]:checked + ul li:nth-child(1) {
+    background: #0cd585;
+    color: #fff;
+  }
+}
